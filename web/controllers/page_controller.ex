@@ -5,7 +5,4 @@ defmodule Fluffy.PageController do
     render conn, :index
   end
 
-  def now(conn, %{"zip" => zip}) do
-    render conn, :now, zip: zip
-  end
 end
