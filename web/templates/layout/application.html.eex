@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Fluffy!</title>
+    <title>Fluffy</title>
     <link rel="stylesheet" href="/static/css/app.css">
   </head>
 
@@ -16,8 +16,8 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
         </ul>
-        <h1>Fluffy Cloud</h1>
-        <span class="logo"></span>
+       <span class="logo"></span>
+      <h1 class="title">Fluffy Cloud</h1>
       </div>
 
       <%= @inner %>
