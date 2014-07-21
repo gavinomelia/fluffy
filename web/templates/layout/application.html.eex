@@ -6,11 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <div class="search_box">
-    <input type="search" name="long_lat" placeholder="latitude and longitude">
-    <input type="submit">
-    </div>
-    <title>Fluffy</title>
+  <title>Fluffy</title>
   <link rel="stylesheet" href="/static/css/app.css">
 </head>
 
