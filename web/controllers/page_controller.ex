@@ -2,7 +2,7 @@ defmodule Fluffy.PageController do
   use Phoenix.Controller
 
   def index(conn, _params) do
-    render conn, :index
+    render conn, "index"
   end
 
 end
