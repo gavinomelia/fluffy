@@ -8,6 +8,7 @@
   <meta name="author" content="">
   <title>Fluffy</title>
   <link rel="stylesheet" href="/static/css/app.css">
+<link rel="shortcut icon" href="/static/images/favicon.ico">
 </head>
 
 <body>
