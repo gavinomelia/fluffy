@@ -4,6 +4,6 @@ defmodule Fluffy.Router do
   plug Plug.Static, at: "/static", from: :fluffy
 
   get "/", Fluffy.HomeController, :index
-  get "/now/:zip", Fluffy.NowController, :index
+  get "/zip/:id", Fluffy.ZipController, :show
 
 end

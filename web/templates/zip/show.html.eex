@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h2>Zip: <%= @zip %></h2>
+  <h2>Zip: <%= @id %></h2>
   <h2>Temp: 93°</h2>
   <p class="lead"></p>
 </div>
