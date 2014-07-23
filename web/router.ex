@@ -3,7 +3,7 @@ defmodule Fluffy.Router do
 
   plug Plug.Static, at: "/static", from: :fluffy
 
-  get "/", Fluffy.PageController, :index, as: :page
-  get "/now/:zip", Fluffy.NowController, :index, as: :zip
+  get "/", Fluffy.HomeController, :index
+  get "/now/:zip", Fluffy.NowController, :index
 
 end

@@ -1,4 +1,4 @@
-defmodule Fluffy.PageController do
+defmodule Fluffy.HomeController do
   use Phoenix.Controller
 
   def index(conn, _params) do

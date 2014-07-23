@@ -15,8 +15,10 @@
     <div class="header">
       <ul class="nav nav-pills pull-right">
       </ul>
-      <span class="logo"></span>
-      <h1 class="title">Fluffy Cloud</h1>
+      <a href="/">
+        <span class="logo"></span>
+        <h1 class="title">Fluffy Cloud</h1>
+      </a>
     </div>
 
     <%= @inner %>

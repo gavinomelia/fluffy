@@ -25,7 +25,7 @@ defmodule Fluffy.Mixfile do
   defp deps do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
-      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
+      {:cowboy, github: "extend/cowboy", optional: true}
     ]
   end
 end
