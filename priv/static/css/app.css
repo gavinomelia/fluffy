@@ -23,6 +23,13 @@ div.search_box {
   padding-right: 15px;
   padding-left: 15px;
 }
+.title {
+	text-decoration: none;
+	color: #000000;
+}
+ a:hover {
+	text-decoration: none;
+}
 .logo {
   width: 75px;
   height: 65px;
