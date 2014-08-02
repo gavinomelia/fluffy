@@ -13,7 +13,7 @@ defmodule Fluffy.Mixfile do
   def application do
     [
       mod: { Fluffy, [] },
-      applications: [:phoenix]
+      applications: [:phoenix, :httpotion]
     ]
   end
 
@@ -25,6 +25,8 @@ defmodule Fluffy.Mixfile do
   defp deps do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
+      {:httpotion, github: "myfreeweb/httpotion"},
+      {:json, github: "cblage/elixir-json"},
       {:cowboy, github: "extend/cowboy", optional: true}
     ]
   end

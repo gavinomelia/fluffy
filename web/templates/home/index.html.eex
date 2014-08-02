@@ -1,14 +1,12 @@
 <div class="jumbotron">
-	<h2>Welcome to Fluffy Cloud!</h2>
-	<p class="lead">
-	</p>
-	<p>Cities:</p>
-	<ul>
-	<li><a href="/zip/06030">Farmington, CT</a></li>
-	<li><a href="/zip/27592">Willow Springs, NC</a></li>
-	<li><a href="/zip/02110">Boston, MA</a></li>
-	<li><a href="/zip/73301">Austin, TX</a></li>
-</ul>
-
-	</div>
+  <h2>Welcome to Fluffy Cloud!</h2>
+  <p class="lead"></p>
+  <p>Cities:</p>
+  <ul>
+    <li><a href="/zip/06030">Farmington, CT</a></li>
+    <li><a href="/zip/27592">Willow Springs, NC</a></li>
+    <li><a href="/zip/02110">Boston, MA</a></li>
+    <li><a href="/zip/73301">Austin, TX</a></li>
+  </ul>
+</div>
 

@@ -1,5 +1,7 @@
 <div class="jumbotron">
   <h2>Zip: <%= @id %></h2>
-  <h2>Temp: 93°</h2>
+  <h2><%= @summary %></h2>
+  <h2>Temp: <%= @temperature %>°</h2>
+  <h2><%= @forecast %></h2>
   <p class="lead"></p>
 </div>
