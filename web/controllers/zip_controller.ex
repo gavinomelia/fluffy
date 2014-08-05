@@ -9,15 +9,26 @@ defmodule Fluffy.ZipController do
   }
 
   def show(conn, %{"id" => id}) do
-    { temp, summary, forecast } = weather_for(id)
-    render conn, "show", id: id, temperature: temp, summary: summary, forecast: forecast
+    { temp, summary, forecast, temperatureMax, temperatureMin } = weather_for(id)
+    IO.inspect { temp, summary, forecast, temperatureMax }
+    render conn, "show", id: id, temperature: temp, summary: summary, forecast: forecast, temperatureMax: temperatureMax, temperatureMin: temperatureMin
   end
 
 
   defp weather_for(zip) do
     { :ok, parsed } = call_forecast_io(zip) |> JSON.decode
+    #IO.inspect parsed 
     current = parsed["currently"]
-    { current["temperature"], current["summary"], parsed["hourly"]["summary"] }
+    daily = parsed["daily"]
+    IO.puts "----"
+    IO.inspect daily
+
+    IO.puts "----"
+    key = daily["data"]
+    IO.inspect is_list(key)
+    first_key = List.first(key)
+    #IO.inspect daily["key"]
+    { current["temperature"], current["summary"], parsed["hourly"]["summary"], first_key["temperatureMax"], first_key["temperatureMin"] }
   end
 
   defp call_forecast_io(zip) do

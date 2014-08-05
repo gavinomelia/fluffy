@@ -3,5 +3,7 @@
   <h2><%= @summary %></h2>
   <h2>Temp: <%= @temperature %>°</h2>
   <h2><%= @forecast %></h2>
+  <h2>High: <%= @temperatureMax %>°</h2>
+  <h2>Low: <%= @temperatureMin %>°</h2>
   <p class="lead"></p>
 </div>
