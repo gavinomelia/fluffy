@@ -7,8 +7,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Fluffy</title>
-  <link rel="stylesheet" href="/static/css/app.css">
-<link rel="shortcut icon" href="/static/images/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="shortcut icon" href="/images/favicon.ico">
 </head>
 
 <body>
@@ -31,3 +31,4 @@
   </div> <!-- /container -->
 </body>
 </html>
+

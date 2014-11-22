@@ -1,15 +1,30 @@
+# This file is responsible for configuring your application
+# and its dependencies with the aid of the Mix.Config module.
+#
+# This configuration file is loaded before any dependency and
+# is restricted to this project.
 use Mix.Config
 
+# Configures the router
 config :phoenix, Fluffy.Router,
-  port: System.get_env("PORT"),
-  ssl: false,
-  code_reload: false,
-  cookies: true,
-  session_key: "_fluffy_key",
-  session_secret: "J1#15KBD7%S155F5QZ*3@E(EP2S@!IO(PP$&PU@$HQM$84_&YQB9N^LXX8TJ^U$XT_TY!#&7#I("
+  url: [host: "localhost"],
+  http: [port: System.get_env("PORT")],
+  https: false,
+  secret_key_base: "Rrpowkwcz/EJaYx9f+JfDMOG467Cof3SFfXkw/TgDxgCC0hcjQFRwLqhWtKO5nUcCSm0Dg4CMEl/S7poXxp6jg==",
+  catch_errors: true,
+  debug_errors: false,
+  error_controller: Fluffy.PageController
 
-config :phoenix, :logger,
-  level: :error
+# Session configuration
+config :phoenix, Fluffy.Router,
+  session: [store: :cookie,
+            key: "_fluffy_key"]
 
+# Configures Elixir's Logger
+config :logger, :console,
+  format: "$time $metadata[$level] $message\n",
+  metadata: [:request_id]
 
+# Import environment specific config. This must remain at the bottom
+# of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

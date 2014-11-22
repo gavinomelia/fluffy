@@ -1,9 +1,12 @@
 defmodule Fluffy.Router do
   use Phoenix.Router
 
-  plug Plug.Static, at: "/static", from: :fluffy
+  scope "/" do
+    pipe_through :browser
 
-  get "/", Fluffy.HomeController, :index
-  get "/zip/:id", Fluffy.ZipController, :show
+    # get "/", Fluffy.PageController, :index, as: :pages
+    get "/", Fluffy.HomeController, :index
+    get "/zip/:id", Fluffy.ZipController, :show
+  end
 
 end

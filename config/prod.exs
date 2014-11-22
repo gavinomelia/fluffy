@@ -1,13 +1,20 @@
 use Mix.Config
 
+# ## SSL Support
+#
+# To get SSL working, you will need to set:
+#
+#     https: [port: 443,
+#             keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
+#             certfile: System.get_env("SOME_APP_SSL_CERT_PATH")]
+#
+# Where those two env variables point to a file on
+# disk for the key and cert.
+
 config :phoenix, Fluffy.Router,
-  port: System.get_env("PORT"),
-  ssl: false,
-  code_reload: false,
-  cookies: true,
-  session_key: "_fluffy_key",
-  session_secret: "J1#15KBD7%S155F5QZ*3@E(EP2S@!IO(PP$&PU@$HQM$84_&YQB9N^LXX8TJ^U$XT_TY!#&7#I("
+  url: [host: "example.com"],
+  http: [port: System.get_env("PORT")],
+  secret_key_base: "Rrpowkwcz/EJaYx9f+JfDMOG467Cof3SFfXkw/TgDxgCC0hcjQFRwLqhWtKO5nUcCSm0Dg4CMEl/S7poXxp6jg=="
 
-config :phoenix, :logger,
-  level: :error
-
+config :logger, :console,
+  level: :info
