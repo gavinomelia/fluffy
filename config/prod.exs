@@ -12,7 +12,7 @@ use Mix.Config
 # disk for the key and cert.
 
 config :phoenix, Fluffy.Router,
-  url: [host: "fluffycloud.herokuapp.com"],
+  url: [host: "example.com"],
   http: [port: System.get_env("PORT")],
   secret_key_base: "Rrpowkwcz/EJaYx9f+JfDMOG467Cof3SFfXkw/TgDxgCC0hcjQFRwLqhWtKO5nUcCSm0Dg4CMEl/S7poXxp6jg=="
 
