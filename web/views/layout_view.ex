@@ -1,4 +1,4 @@
 defmodule Fluffy.LayoutView do
-  use Fluffy.Views
+  use Fluffy.View
 
 end

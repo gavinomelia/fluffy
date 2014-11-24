@@ -20,7 +20,7 @@ defmodule Fluffy.Mixfile do
 
   defp deps do
     [
-      {:phoenix, "0.5.0"},
+      {:phoenix, "0.6.0"},
       {:httpoison, "~> 0.5"},
       {:json, "~> 0.3.2"},
       {:cowboy, "~> 1.0"}

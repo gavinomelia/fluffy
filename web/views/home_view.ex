@@ -1,4 +1,4 @@
 defmodule Fluffy.HomeView do
-  use Fluffy.Views
+  use Fluffy.View
 
 end

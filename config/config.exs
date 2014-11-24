@@ -9,7 +9,6 @@ use Mix.Config
 config :phoenix, Fluffy.Router,
   url: [host: "localhost"],
   http: [port: System.get_env("PORT")],
-  https: false,
   secret_key_base: "Rrpowkwcz/EJaYx9f+JfDMOG467Cof3SFfXkw/TgDxgCC0hcjQFRwLqhWtKO5nUcCSm0Dg4CMEl/S7poXxp6jg==",
   catch_errors: true,
   debug_errors: false,

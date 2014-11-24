@@ -13,7 +13,7 @@ defmodule Fluffy.ZipController do
 
   def show(conn, %{"id" => id}) do
     { temp, summary, forecast, temperatureMax, temperatureMin, precipProbability } = weather_for(id)
-    render conn, "show", id: id, temperature: temp, summary: summary, forecast: forecast, temperatureMax: temperatureMax, temperatureMin: temperatureMin, precipProbability: precipProbability
+    render conn, "show.html", id: id, temperature: temp, summary: summary, forecast: forecast, temperatureMax: temperatureMax, temperatureMin: temperatureMin, precipProbability: precipProbability
   end
 
 

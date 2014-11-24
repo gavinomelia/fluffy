@@ -1,4 +1,4 @@
 defmodule Fluffy.ZipView do
-  use Fluffy.Views
+  use Fluffy.View
 
 end

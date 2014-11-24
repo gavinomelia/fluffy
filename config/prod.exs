@@ -16,5 +16,5 @@ config :phoenix, Fluffy.Router,
   http: [port: System.get_env("PORT")],
   secret_key_base: "Rrpowkwcz/EJaYx9f+JfDMOG467Cof3SFfXkw/TgDxgCC0hcjQFRwLqhWtKO5nUcCSm0Dg4CMEl/S7poXxp6jg=="
 
-config :logger, :console,
+config :logger,
   level: :info
