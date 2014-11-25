@@ -1,7 +1,7 @@
 %{"cowboy": {:hex, :cowboy, "1.0.0"},
   "cowlib": {:hex, :cowlib, "1.0.0"},
   "hackney": {:hex, :hackney, "0.14.3"},
-  "httpoison": {:hex, :httpoison, "0.5.0"},
+  "httpoison": {:git, "git://github.com/edgurgel/httpoison.git", "f5f310c77525f7da2ae814f615349984b4d86406", []},
   "idna": {:hex, :idna, "1.0.1"},
   "json": {:hex, :json, "0.3.2"},
   "linguist": {:hex, :linguist, "0.1.4"},

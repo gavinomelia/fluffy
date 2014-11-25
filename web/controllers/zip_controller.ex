@@ -32,7 +32,7 @@ defmodule Fluffy.ZipController do
   end
 
   defp get_response_body(url) do
-    { :ok, %HTTPoison.Response{body: body} } = HTTPoison.get(url)
+    { :ok, %HTTPoison.Response{status_code: 200, body: body} } = HTTPoison.get(url)
     body
   end
 
