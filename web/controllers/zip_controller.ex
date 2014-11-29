@@ -16,6 +16,14 @@ defmodule Fluffy.ZipController do
     ~s(#{loc["lat"]},#{loc["lng"]})
   end
 
+  defp address(zip) do
+   { :ok, parsed } = call_geocoding(zip) |> JSON.decode
+   first_result = parsed["results"] |> List.first
+   IO.inspect first_result
+   address_thing = first_result["formatted_address"]
+   IO.inspect address_thing
+  end
+
   defp weather_for(zip) do
     { :ok, parsed } = call_forecast_io(zip) |> JSON.decode
     current = parsed["currently"]

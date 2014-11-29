@@ -1,5 +1,6 @@
 <div class="jumbotron">
 	<h4>Zip: <%= @id %></h4>
+  <h4>Address: <%= @address %></h4>
   <h2>Temp: <%= @temperature %>°</h2>
   <h2>High: <%= @temperatureMax %>°</h2>
   <h2>Low: <%= @temperatureMin %>°</h2>
