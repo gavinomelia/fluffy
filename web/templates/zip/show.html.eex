@@ -7,6 +7,6 @@
   <p><%= @summary %></p>
   <h2>Next 24 hours:<br></h2>
   <p><%= @forecast %></p>
-  <h2>Chance of rain today: <%= @precipProbability %></h2>
+  <h2>Chance of precipitation today: <%= @precipProbability %></h2>
   <p class="lead"></p>
 </div>
